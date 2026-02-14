@@ -1,0 +1,17 @@
+# Ignore the disk images (The Cake)
+*.img
+*.iso
+*.qcow2
+*.vDI
+
+# Ignore compiled object files (The intermediate batter)
+*.o
+*.ko
+
+# Ignore the build directory (if you have one)
+/build
+/mnt
+
+# Ignore temporary editor files
+*.swp
+*~
