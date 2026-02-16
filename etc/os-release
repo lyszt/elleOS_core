@@ -1,6 +1,6 @@
-NAME="ElleOS"
+NAME="Fleur de Lys"
 VERSION="Alpha 1"
-ID=elleos
-PRETTY_NAME="ElleOS Alpha"
+ID=fleur_de_lys
+PRETTY_NAME="Fleur de Lys Alpha"
 ANSI_COLOR="0;35"
 HOME_URL="https://github.com/lyszt/elleOS_core"

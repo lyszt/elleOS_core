@@ -1,4 +1,4 @@
-IMAGE      := ElleOS.img
+IMAGE      := Fleur_de_Lys.img
 MNT        := mnt_image
 LOOP_DEV    = $(shell losetup -j $(IMAGE) | cut -d: -f1)
 

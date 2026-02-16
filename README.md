@@ -1,8 +1,8 @@
-# ElleOS
+# Fleur de Lys
 
 *"If you wish to make an apple pie from scratch, first invent the universe." -- Carl Sagan*
 
-ElleOS is a Linux distribution built from scratch, following the Linux From Scratch methodology. The system is assembled inside a disk image and developed through a chroot environment on the host machine.
+Fleur de Lys is a Linux distribution built from scratch, following the Linux From Scratch methodology. The system is assembled inside a disk image and developed through a chroot environment on the host machine.
 
 ## Disk Layout
 
@@ -46,7 +46,7 @@ sudo bash scripts/build_os.sh
 ## Project Structure
 
 ```
-ElleOS.img            # The disk image
+Fleur_de_Lys.img      # The disk image
 mnt_image/            # Mount point (created by make mount)
 Makefile              # Mount, chroot, and unmount targets
 etc/
