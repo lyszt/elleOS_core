@@ -31,7 +31,7 @@ All commands require root privileges.
 
 ```
 sudo make mount       # Attach the image and mount partitions into mnt_image/
-sudo make chroot      # Mount + bind virtual filesystems + enter chroot shell
+sudo make run         # Mount + bind virtual filesystems + enter chroot shell
 sudo make umount      # Unmount everything and detach the loop device
 ```
 
@@ -48,7 +48,7 @@ sudo bash scripts/build_os.sh
 ```
 Fleur_de_Lys.img      # The disk image
 mnt_image/            # Mount point (created by make mount)
-Makefile              # Mount, chroot, and unmount targets
+Makefile              # Mount, run, and unmount targets
 etc/
   os-release          # Distribution identity
 scripts/

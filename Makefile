@@ -2,7 +2,7 @@ IMAGE      := Fleur_de_Lys.img
 MNT        := mnt_image
 LOOP_DEV    = $(shell losetup -j $(IMAGE) | cut -d: -f1)
 
-.PHONY: mount umount chroot
+.PHONY: mount umount run
 
 mount:
 	@if [ "$$(id -u)" -ne 0 ]; then echo "Run with sudo"; exit 1; fi
@@ -36,7 +36,7 @@ umount:
 	fi
 	@echo "--- Unmounted."
 
-chroot: mount
+run: mount
 	@if [ "$$(id -u)" -ne 0 ]; then echo "Run with sudo"; exit 1; fi
 	@echo "--- Binding virtual filesystems..."
 	@mkdir -p $(MNT)/{dev,proc,sys,run}
