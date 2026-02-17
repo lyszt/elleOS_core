@@ -51,4 +51,4 @@ run: mount
 	@mountpoint -q $(MNT)/sys  || mount -t sysfs sys  $(MNT)/sys
 	@mountpoint -q $(MNT)/run  || mount -t tmpfs tmpfs $(MNT)/run
 	@echo "--- Entering chroot..."
-	unshare --uts -- sh -c "hostname $$(cat $(MNT)/etc/hostname 2>/dev/null || echo FleurDeLys) && TERM=linux chroot $(MNT) /bin/bash --login"
+	TERM=linux chroot $(MNT) /bin/bash --login
